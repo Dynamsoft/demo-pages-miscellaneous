@@ -165,6 +165,7 @@ body {
   background-color: rgb(55, 55, 57);
   font-family: OpenSans-Regular;
   font-size: 12px;
+  padding: 0 20px;
 }
 
 .footer .footer-content span {
