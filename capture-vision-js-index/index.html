@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Dynamsoft Label Recognizer (DLR) is a data capture SDK designed to recognize meaningful zonal text or symbols in an image (or a ‘Label’ in this context)."
+    />
+    <meta name="keywords" content="mrz, vin, passport, visa, id, drivers license, ocr" />
+    <title>Label Recognizer JavaScript Demo | Dynamsoft</title>
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <div class="header">
+      <a class="header-icon-container" target="_blank" href="https://www.dynamsoft.com/">
+        <img class="header-icon" src="./assets/dynamsoft_logo_orange.png" alt="logo" />
+      </a>
+      <!-- -----------ignore this part when uploading to github ↓------------ -->
+      <div>
+        <svg width="24" height="24" viewBox="0 0 24 24">
+          <g transform="translate(-319 -816.551)">
+            <g>
+              <g id="conversation-chat-2">
+                <path
+                  d="M333.5,817.051h-10a4,4,0,0,0-4,4v5a4,4,0,0,0,4,4h1v4l4.5-4h4.5a4,4,0,0,0,4-4v-5A4,4,0,0,0,333.5,817.051Z"
+                  fill="none"
+                  stroke="#fff"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1"
+                />
+                <path
+                  d="M330.5,833.051v1.5a2.5,2.5,0,0,0,2.5,2.5h2.5l3,3v-3H340a2.5,2.5,0,0,0,2.5-2.5v-3a2.5,2.5,0,0,0-2.5-2.5h-.5"
+                  fill="none"
+                  stroke="#fff"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1"
+                />
+              </g>
+            </g>
+          </g>
+        </svg>
+      </div>
+      <!-- -----------ignore this part when uploading to github ↑------------ -->
+      <div class="get-code-btn">
+        <a href="https://github.com/Dynamsoft/label-recognizer-javascript-demo" target="_blank">
+          Get Source Code
+          <img src="./assets/download.svg" class="download-icon" />
+        </a>
+      </div>
+    </div>
+    <div class="homepage">
+      <div class="content">
+        <div class="content-header">
+          <img src="./assets/dlr-logo-icon.svg" class="dlr-logo" alt="logo" />
+          <div class="explain-text">Turn your web page into a text scanner with just a few lines of code!</div>
+        </div>
+        <div class="choices">
+          <div class="tooltip">To try the library, select a mode below and start scannning</div>
+          <div class="option" id="general-mrz">
+            <div class="label">
+              General MRZ Scanner
+              <div class="tooltip">
+                <div data-v-c6bdc170="" class="mrzToolTip">
+                  Recognizes MRZ code &amp; extracts data from ID-cards, passports, and visas. Supports TD-1, TD-2,
+                  TD-3, MRV-A, and MRV-B standards
+                </div>
+              </div>
+            </div>
+            <div class="icon">
+              <img src="./assets/mrz-icon.svg" />
+            </div>
+          </div>
+          <div class="option-row">
+            <div class="option" id="passport-mrz">
+              <div class="label">Passport MRZ Scanner</div>
+            </div>
+            <div class="option" id="vin">
+              <div class="label">VIN Scanner</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="support-content">
+      Supported Browsers: Safari v14+, Chrome v78+, Firefox 62+ and Edge v79+ on Desktop/Android/iOS.
+    </div>
+    <div class="footer">
+      <div class="footer-content">
+        <a class="footer-icon-container" target="_blank" href="https://www.dynamsoft.com/">
+          <img class="footer-icon" src="./assets/dynamsoft_logo_orange.png" alt="logo" />
+        </a>
+        <span>
+          © 2003 - <span class="current-year"></span> Dynamsoft. All rights reserved.
+          <a href="https://www.dynamsoft.com/PrivacyStatement.aspx" target="_blank"> Privacy Statement </a>
+          /
+          <a href="https://www.dynamsoft.com/SiteMap.aspx" target="_blank"> Site Map</a>
+        </span>
+      </div>
+    </div>
+    <script src="./js/index.js"></script>
+    <!-- -----------ignore this part when uploading to github ↓------------ -->
+    <script type="text/javascript">
+      var Comm100API = Comm100API || {};
+      (function (t) {
+        function e(e) {
+          var a = document.createElement("script"),
+            c = document.getElementsByTagName("script")[0];
+          (a.type = "text/javascript"), (a.async = !0), (a.src = e + t.site_id), c.parentNode.insertBefore(a, c);
+        }
+        (t.chat_buttons = t.chat_buttons || []),
+          t.chat_buttons.push({
+            code_plan: "20242b05-3781-4d86-9b7f-fab63ddcdde3",
+            div_id: "comm100-button-20242b05-3781-4d86-9b7f-fab63ddcdde3",
+          }),
+          (t.site_id = 90003305),
+          (t.main_code_plan = "20242b05-3781-4d86-9b7f-fab63ddcdde3"),
+          e("https://vue.comm100.com/livechat.ashx?siteId="),
+          setTimeout(function () {
+            t.loaded || e("https://standby.comm100vue.com/livechat.ashx?siteId=");
+          }, 5e3);
+      })(Comm100API || {});
+
+      document
+        .querySelector(".get-code-btn")
+        .addEventListener("click", () => window.Comm100API.do("livechat.button.click"));
+    </script>
+    <!-- -----------ignore this part when uploading to github ↑------------ -->
+  </body>
+</html>
