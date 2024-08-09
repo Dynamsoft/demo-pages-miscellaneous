@@ -48,22 +48,6 @@ body {
   height: 50%;
 }
 
-.header .get-code-btn {
-  width: 100%;
-  text-align: right;
-  min-width: 112px;
-}
-
-.header .get-code-btn a {
-  text-align: right;
-  color: #ffffff;
-  font-family: Oswald-Regular;
-  text-decoration: none;
-}
-.header .get-code-btn .download-icon {
-  margin-left: 5px;
-}
-
 .homepage {
   background-color: rgb(50, 50, 52);
   color: white;
@@ -153,7 +137,7 @@ body {
 }
 
 .support-content {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   display: flex;
   align-items: center;
@@ -188,6 +172,11 @@ body {
   .homepage .content .content-header .dlr-logo {
     width: 516px;
     height: 66px;
+  }
+
+  .homepage .content {
+    overflow: auto;
+    padding-bottom: 100px;
   }
 
   .homepage .content .content-header {
@@ -236,7 +225,7 @@ body {
   }
 
   .support-content {
-    position: absolute;
+    position: fixed;
     bottom: 12%;
     display: flex;
     left: 0;
@@ -254,7 +243,7 @@ body {
   }
 
   .footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     display: flex;
     align-items: center;
