@@ -53,28 +53,47 @@
         </div>
         <div class="choices">
           <div class="tooltip">To try the library, select a mode below and start scannning</div>
-          <div class="option" id="general-mrz">
-            <div class="label">
-              MRZ Scanner
-              <div class="tooltip">
-                <div data-v-c6bdc170="" class="mrzToolTip">
-                  Recognizes MRZ code &amp; extracts data from ID-cards, passports, and visas. Supports TD-1, TD-2,
-                  TD-3, MRV-A, and MRV-B standards
+          <div class="option-row">
+            <div class="option" id="general-mrz">
+              <div class="label">
+                MRZ Scanner
+                <div class="tooltip">
+                  <div data-v-c6bdc170="" class="mrzToolTip">
+                    Recognizes MRZ code &amp; extracts data from ID-cards, passports, and visas. Supports TD-1, TD-2,
+                    TD-3, MRV-A, and MRV-B standards.
+                  </div>
+                  <div class="scan-barcode-msg">
+                    Scan the QR code with your smartphone to launch the MRZ scanner demo!
+                  </div>
                 </div>
               </div>
+              <div class="icon">
+                <img
+                  class="barcode"
+                  src="./assets/mrz-scanner-demo-qr-code.svg"
+                  alt="https://demo.dynamsoft.com/solutions/mrz-scanner/index.html"
+                />
+              </div>
             </div>
-            <div class="icon">
-              <img src="./assets/mrz-icon.svg" />
-            </div>
-          </div>
-          <div class="option" id="vin">
-            <div class="label">
-              VIN Scanner
-              <div class="tooltip">
-                <div data-v-c6bdc170="" class="vinToolTip">
-                  Accurately identifies a vehicle's unique VIN through its barcode and text lines to extract vehicle
-                  information.
+            <div class="option" id="vin">
+              <div class="label">
+                VIN Scanner (Beta)
+                <div class="tooltip">
+                  <div data-v-c6bdc170="" class="vinToolTip">
+                    Accurately identifies a vehicle's unique VIN through its barcode and text lines to extract vehicle
+                    information.
+                  </div>
+                  <div class="scan-barcode-msg">
+                    Scan the QR code with your smartphone to launch the VIN scanner demo!
+                  </div>
                 </div>
+              </div>
+              <div class="icon">
+                <img
+                  class="barcode"
+                  src="./assets/vin-scanner-demo-qr-code.jpg"
+                  alt="https://demo.dynamsoft.com/Samples/DCV/JS/VINScanner/index.html"
+                />
               </div>
             </div>
           </div>
