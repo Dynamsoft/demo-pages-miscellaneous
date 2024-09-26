@@ -10,7 +10,7 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
-  Build-Demo:
+  Build-DLRDemo:
     if: ${{ github.ref == 'refs/heads/dlrdemo' }}    
     
     # The type of runner that the job will run on
@@ -25,7 +25,7 @@ jobs:
         run: |
           cd /home/ubuntu
           [ -d demo-pages-miscellaneous ] && rm -rf demo-pages-miscellaneous
-          git clone --depth 1 -b demo https://github.com/Dynamsoft/demo-pages-miscellaneous.git 
+          git clone --depth 1 -b dlrdemo https://github.com/Dynamsoft/demo-pages-miscellaneous.git 
           
       - name: Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
