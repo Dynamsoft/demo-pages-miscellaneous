@@ -59,7 +59,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding-top: 10vh;
+  padding: 10vh 0 20vh;
 }
 
 .homepage .content .content-header {
@@ -175,8 +175,7 @@ body {
   }
 
   .homepage .content {
-    overflow: auto;
-    padding-bottom: 100px;
+    padding-bottom: 25vh;
   }
 
   .homepage .content .content-header {
