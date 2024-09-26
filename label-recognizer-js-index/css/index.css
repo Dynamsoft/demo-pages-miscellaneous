@@ -59,7 +59,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 10vh 0 20vh;
+  padding: 10vh 0 15vh;
 }
 
 .homepage .content .content-header {
@@ -98,6 +98,7 @@ body {
   padding: 20px;
   height: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   gap: 15px;
@@ -111,18 +112,24 @@ body {
 }
 
 .homepage .content .choices .option .label {
-  font-size: 16px;
+  font-size: 24px;
   font-family: Oswald-Regular;
 }
 
 .homepage .content .choices .option .label .tooltip {
-  display: block;
-  font-size: 12px;
+  display: flex;
+  font-size: 14px;
   font-family: Opensans-Regular;
-  color: #999;
+  flex-direction: column;
+  padding-top: 10px;
+  gap: 10px;
 }
 
-.homepage .content .choices .icon {
+.homepage .content .choices .option .label .tooltip .scan-barcode-msg {
+  display: none;
+}
+
+.homepage .content .choices .icon .barcode {
   display: none;
 }
 
@@ -134,6 +141,9 @@ body {
 
 .homepage .content .choices .option-row .option {
   flex: 1;
+  height: auto;
+  display: flex;
+  align-items: start;
 }
 
 .support-content {
@@ -205,22 +215,36 @@ body {
 
   .homepage .content .choices .option {
     min-height: 90px;
+    flex-direction: row;
+    gap: 0;
   }
 
   .homepage .content .choices .option .label {
-    font-size: 24px;
+    font-size: 28px;
   }
 
   .homepage .content .choices .option .label .tooltip {
     font-size: 16px;
     font-family: Opensans-Regular;
-    max-width: 60%;
+    max-width: 80%;
+    padding-top: 10px;
+    gap: 20px;
+  }
+
+  .homepage .content .choices .option .label .tooltip .scan-barcode-msg {
+    display: block;
   }
 
   .homepage .content .choices .option-row {
     display: flex;
-    gap: 15px;
+    gap: 2rem;
     flex-direction: row;
+  }
+
+  .homepage .content .choices .icon .barcode {
+    display: unset;
+    width: 10rem;
+    height: 10rem;
   }
 
   .support-content {
