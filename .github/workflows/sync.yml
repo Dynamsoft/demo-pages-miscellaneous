@@ -36,9 +36,4 @@ jobs:
           port: 21 
           local-dir: /home/ubuntu/demo-pages-miscellaneous/link-redirect-config/
           server-dir: /Demo.dynamsoft.com/solutions/passport-scanner/
-      - name: List files before sync
-        run: ls -R /home/ubuntu/demo-pages-miscellaneous/link-redirect-config/
-        
-      - name: List files after sync
-        run: ls -R /Demo.dynamsoft.com/solutions/mrz-scanner
         
