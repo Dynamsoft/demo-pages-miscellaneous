@@ -40,5 +40,5 @@ jobs:
         run: ls -R /home/ubuntu/demo-pages-miscellaneous/link-redirect-config/
         
       - name: List files after sync
-        run: ls -R /Demo.dynamsoft.com/solutions/passport-scanner/
+        run: ls -R /Demo.dynamsoft.com/solutions/mrz-scanner
         
