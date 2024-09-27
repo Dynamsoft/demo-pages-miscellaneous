@@ -35,4 +35,5 @@ jobs:
           password: ${{ secrets.FTP_DEMO_PASSWORD }}
           port: 21 
           local-dir: /home/ubuntu/demo-pages-miscellaneous/link-redirect-config/
-          server-dir: /demo.dynamsoft.com/solutions/passport-scanner/
+          server-dir: /Demo.dynamsoft.com/solutions/passport-scanner/
+        
